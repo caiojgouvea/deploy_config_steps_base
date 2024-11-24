@@ -27,6 +27,15 @@
 
 > FLUSH PRIVILEGES;
 
+### Change Root Password
+> sudo mysql
+
+> USE mysql;
+
+> ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+> FLUSH PRIVILEGES;
+
 ### Basic comands: start, stop, status
 
 > sudo systemctl start mysql
